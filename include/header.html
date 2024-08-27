@@ -1,0 +1,62 @@
+<header class="header">
+  <a class="bar-popup" href="#none">[NEW] 듀 틴트 런칭 UP TO 25%</a>
+  <div class="main-header">
+    <div class="main-header-inner">
+      <div class="logo"><a href="../html/01.index.html"><img src="../images/logo.png"></a></div>
+      <nav>
+        <ul class="category-nav">
+          <li><a href="../html/03.item-list.html">제품</a></li>
+          <li><a href="../html/03.item-list.html">이벤트</a></li>
+          <li><a href="../html/03.item-list.html">브랜드</a></li>
+          <li><a href="#none">매장</a></li>
+          <li><a href="../html/05.notice.html">커뮤니티</a></li>
+        </ul>
+      </nav>
+      <div class="icon-box">
+        <div class="language">
+          <span>Language</span>
+          <select name="languages" id="lang">
+            <option value="kOREA">kOREA</option>
+            <option value="ENGLISH">ENGLISH</option>
+            <option value="JAPAN">JAPAN</option>
+          </select>
+        </div>
+        <div class="icons">
+          <a href="../html/02.login.html"><img src="../images/cm_header_icon_people.png"></a>
+          <a href="../html/02.login.html"><img src="../images/cm_header_icon_cart.png"></a>
+          <a href="#none"><img src="../images/cm_header_icon_search.png"></a>
+        </div>
+      </div>
+      <div class="trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="mobile-nav">
+        <div class="mobile-nav-wrap">
+          <div class="nav-wrap-icons">
+            <a href="../html/02.login.html"><img src="../images/cm_header_icon_people.png"></a>
+            <a href="../html/02.login.html"><img src="../images/cm_header_icon_cart.png"></a>
+          </div>
+          <input type="text" class="nav-wrap-search" placeholder="검색어를 입력해주세요.">
+          <ul>
+            <li><a href="../html/03.item-list.html">제품</a></li>
+            <li><a href="#none">이벤트</a></li>
+            <li><a href="#none">브랜드</a></li>
+            <li><a href="#none">매장</a></li>
+            <li><a href="../html/05.notice.html">커뮤니티</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<script>
+  $('.trigger').click(function(){
+    $(this).toggleClass('active');
+    $('.mobile-nav').toggleClass('active');
+  })
+  $('.main-content, .login-content, .item-list-content, .notice-content, .product-detail-content').click(function(){
+    $('.mobile-nav').removeClass('active');
+  })
+</script>
