@@ -1,7 +1,7 @@
 $(function(){
   /* Include html Files */
-  $('.header-include').load('../include/header.html')
-  $('.gnb-include').load('../include/gnb.html')
+  $('.header-include').load('../include/header.html');
+  $('.gnb-include').load('../include/gnb.html');
   
   /* Slick Slider */
   $('.main-banner-slider').slick({

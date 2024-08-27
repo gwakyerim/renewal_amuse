@@ -31,8 +31,6 @@ button {
     position: relative;
 }
 /* Main header Bar */
-.header {
-}
 .bar-popup {
     background-color: var(--pink);
     display: block;
@@ -108,8 +106,6 @@ button {
     display: none;
 }
 /*  GNB  */
-.gnb {
-}
 .gnb-inner {
     width: 128rem;
     padding: 4.0rem 0;
