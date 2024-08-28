@@ -2,15 +2,7 @@ $(function(){
   /* Include html Files */
   $('.header-include').load('../include/header.html');
   $('.gnb-include').load('../include/gnb.html');
-  
-  $('.trigger').click(function(){
-    $(this).toggleClass('active');
-    $('.mobile-nav').toggleClass('active');
-  })
-  $('.main-content, .login-content, .item-list-content, .notice-content, .product-detail-content').click(function(){
-    $('.mobile-nav').removeClass('active');
-  })
-  
+
   /* Slick Slider */
   $('.main-banner-slider').slick({
     slidesToShow: 1,
