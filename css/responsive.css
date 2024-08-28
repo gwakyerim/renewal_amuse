@@ -254,9 +254,7 @@
         height: 32rem;
     }
     .main-banner-slider a img {
-        width: 100%;
-        height: 32rem;
-        object-fit: cover;
+        transform: scale(-);
     }
     /* Best Slider */
     .best-seller,
