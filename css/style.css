@@ -12,13 +12,13 @@ body {
     font-size: 2.0rem;
     background-color: var(--white);
     height: 100%;
+    overflow-x: hidden;
 }
 
 /* ### Common CSS ### */
 /* Layout */
 .container {
     width: 100%; /* 작업 완료 후 100% */
-    overflow: hidden;
 }
 [class*="content"] {
     width: 128rem;
@@ -30,7 +30,7 @@ button {
 .inner {
     position: relative;
 }
-/* Main header Bar */
+/* header */
 .bar-popup {
     background-color: var(--pink);
     display: block;
@@ -305,8 +305,6 @@ button {
 }
 .amuse-pick .items-header {
     padding-bottom: 5.0rem;
-}
-.amuse-pick-slider {
 }
 .amuse-pick-slider-inner {
     width: 100%;
@@ -624,6 +622,10 @@ button {
     grid-column-gap: 2.0rem;
 }
 /* ### Product-detail CSS ### */
+.product-detail-content {
+    width: 128rem;
+    margin: 0 auto;
+}
 .product-detail-main {
     display: flex;
     margin: 4.0rem 0;
@@ -858,7 +860,6 @@ button {
     width: 80%;
 }
 /* product-detail-review */
-.product-detail-review {}
 .product-detail-rating-count {}
 .product-detail-rating-count .rating {
     border-top: 1px solid var(--dark-black);
@@ -933,7 +934,6 @@ button {
 .product-review-option div:last-child {
     text-align: right;
 }
-.product-detail-review-gather {}
 .detailed-review {
     border-top: 1px solid var(--light-gray);
     border-bottom: 1px solid var(--light-gray);
