@@ -19,7 +19,7 @@
         font-size: 1.6rem;
     }
     h4 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     h5 {
         font-size: 1.0rem;
@@ -57,12 +57,12 @@
         font-size: 3.0rem;
         color: var(--dark-gray);
     }
-    /* Badge >> 수정해야함 */
+    /* Badge */
     .badge {
         background-color: var(--pink);
         color: var(--white);
         font-size: 1.2rem;
-        padding: 0.2rem 1.0rem;
+        padding: 0.1rem 1.0rem;
         border-radius: 2.0rem;
     }
     /* items */
@@ -145,7 +145,7 @@
     }
     .main-header-inner {
         width: 100%;
-        padding: 0 2.0rem;
+        padding: 0 1.6rem;
         height: 8.0rem;
         background-color: var(--pink);
     }
@@ -262,15 +262,15 @@
     .insta-feed {
         width: 100%;
         margin: 0;
-        padding: 4.0rem 2.0rem;
+        padding: 4.0rem 1.6rem;
     }
     /* amuse-pick */
     .amuse-pick {
-        padding: 4.0rem 2.0rem;
+        padding: 4.0rem 1.6rem;
         width: 100%;
     }
     .amuse-pick .items-header {
-        padding-bottom: 2.0rem;
+        padding-bottom: 1.6rem;
     }
     .amuse-pick-slider-inner {
         width: 100%;
@@ -326,7 +326,7 @@
 
     /* Best-review */
     .best-review {
-        padding: 4.0rem 2.0rem;
+        padding: 4.0rem 1.6rem;
     }
     .items-header div h1 {
         display: block;
@@ -403,7 +403,7 @@
     .container.item-list {}
     .inner-item-list {}
     .item-list-content {
-        padding: 0 2rem;
+        padding: 0 1.6rem;
     }
     .item-list-category {
         gap: 1rem;
@@ -425,12 +425,12 @@
     .container.product-detail {}
     .inner-product-detail {}
     .product-detail-content {
-        padding: 0 2rem;
+        padding: 0 1.6rem;
     }
     .product-detail-main {
         flex-direction: column;
         margin: 4.0rem 0;
-        gap: 2.0rem;
+        gap: 1.6rem;
     }
     .product-detail-main .title-img > a {
         width: 100%;
@@ -580,7 +580,7 @@
     }
     .gnb-inner {
         width: 100%;
-        padding: 4.0rem 2.0rem;
+        padding: 4.0rem 1.6rem;
         display: block;
         font-size: 1.4rem;
     }
@@ -674,7 +674,7 @@
     }
     /* ### Notice CSS ### */
     .notice-content {
-        padding: 2rem;
+        padding: 1.6rem;
     }
     .notice-header {
         padding: 0;
