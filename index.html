@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,389 +17,598 @@
 	<script src="./js/custom.js"></script>
 </head>
 <body>
-	<div class="container main">
-		<div class="inner main">
-			<!-- 헤더 -->
-			<header class="header">
-				<a class="bar-popup" href="#none">[NEW] 듀 틴트 런칭 UP TO 25%</a>
-				<div class="main-header">
-					<div class="main-header-inner">
-						<div class="logo"><a href="./index.html"><img src="./images/logo.png"></a></div>
-						<nav>
-							<ul class="category-nav">
-								<li><a href="./html/item-list.html">제품</a></li>
-								<li><a href="./html/item-list.html">이벤트</a></li>
-								<li><a href="./html/item-list.html">브랜드</a></li>
-								<li><a href="#none">매장</a></li>
-								<li><a href="./html/notice.html">커뮤니티</a></li>
-							</ul>
-						</nav>
-						<div class="icon-box">
-							<div class="language">
-								<span>Language</span>
-								<select name="languages" id="lang">
-									<option value="kOREA">kOREA</option>
-									<option value="ENGLISH">ENGLISH</option>
-									<option value="JAPAN">JAPAN</option>
-								</select>
-							</div>
-							<div class="icons">
-								<a href="./html/login.html"><img src="./images/cm_header_icon_people.png"></a>
-								<a href="./html/login.html"><img src="./images/cm_header_icon_cart.png"></a>
-								<a href="#none"><img src="./images/cm_header_icon_search.png"></a>
-							</div>
-						</div>
-						<div class="trigger">
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
-						<div class="mobile-nav">
-							<div class="mobile-nav-wrap">
-								<div class="nav-wrap-icons">
-									<a href="./html/login.html"><img src="./images/cm_header_icon_people.png"></a>
-									<a href="./html/login.html"><img src="./images/cm_header_icon_cart.png"></a>
-								</div>
-								<input type="text" class="nav-wrap-search" placeholder="검색어를 입력해주세요.">
-								<ul>
-									<li><a href="./html/item-list.html">제품</a></li>
-									<li><a href="#none">이벤트</a></li>
-									<li><a href="#none">브랜드</a></li>
-									<li><a href="#none">매장</a></li>
-									<li><a href="./html/notice.html">커뮤니티</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
+	<div class="container">
+		<!-- Header -->
+		<div class="header-include"></div>
+		<!-- Header -->
+		<div class="contents">
+			<!-- 메인 배너 슬라이더 -->
+			<section class="main">
+				<div class="main-container slider">
+					<h2 class="hide">광고 슬라이더</h2>
+					<a href="#a" class="prev">이전</a>
+					<a href="#a" class="next">다음</a>
+					<ul class="main-wrapper">
+						<li><a href="#none" onclick="location.href='./html/product-detail.html'"><img src="./images/main-banner-01.jpg"></a></li>
+						<li><a href="#none" onclick="location.href='./html/product-detail.html'"><img src="./images/main-banner-02.jpg"></a></li>
+						<li><a href="#none" onclick="location.href='./html/product-detail.html'"><img src="./images/main-banner-03.jpg"></a></li>
+					</ul>
 				</div>
-			</header>
-			<!-- Section : main-content-Page -->
-			<section class="main-content">
-				<!-- 메인 이미지 슬라이더 -->
-				<div class="main-banner-slider">
-					<a href="#none" onclick="location.href='./html/product-detail.html'"><img src="./images/main-banner-01.jpg"></a>
-					<a href="#none" onclick="location.href='./html/product-detail.html'"><img src="./images/main-banner-02.jpg"></a>
-					<a href="#none" onclick="location.href='./html/product-detail.html'"><img src="./images/main-banner-03.jpg"></a>
-				</div>
-				<!-- 베스트셀러  -->
-				<div class="best-seller">
-					<div class="items-header">
-						<h1>베스트 셀러</h1>
-						<button class="btn-more" onclick="location.href='./html/item-list.html'">더보기 +</button>
+			</section>
+			<!-- 베스트 셀러 -->
+			<section class="best">
+				<div class="wrap">
+					<div class="title">
+						<h2>베스트 셀러</h2>
+						<a href="#none">더보기 +</a>
 					</div>
-					<div class="items-gather">
-						<div class="item" onclick="location.href='./html/product-detail.html'">
-							<div class="thum-mouse-over">
-								<a class="thum"><img src="./images/main-best-item-01.jpg"></a>
-								<a class="thum-hidden"><img src="./images/main-best-item-01-change.jpg"></a>
-							</div>
-							<div class="desc">
-								<h4>모든 화장품이 한번에 쏘옥~</h4>
-								<h3>마이 어뮤즈 파우치</h3>
-								<div class="price">
-									<b>13,000원</b>
-									<s>15,000원</s>
-								</div>
-								<div class="wish">
-									<a href="#none"><i class="bi bi-heart"></i></a>
-									<a href="#none"><i class="bi bi-bag"></i></a>
-									<span>review (125)</span>
-								</div>
-							</div>
-						</div>
-						<div class="item" onclick="location.href='./html/product-detail.html'">
-							<div class="thum-mouse-over">
-								<a class="thum"><img src="./images/main-best-item-02.jpg"></a>
-								<a class="thum-hidden"><img src="./images/main-best-item-02-change.jpg"></a>
-							</div>
-							<div class="desc">
-								<h4>[gift] 립 마스크 증정</h4>
-								<h3>듀 젤리 비건 쿠션 세트</h3>
-								<div class="price">
-									<b>37,800원</b>
-									<s>54,000원</s>
-								</div>
-								<div class="wish">
-									<a href="#none"><i class="bi bi-heart"></i></a>
-									<a href="#none"><i class="bi bi-bag"></i></a>
-									<span>review (138)</span>
-								</div>
-							</div>
-						</div>
-						<div class="item" onclick="location.href='./html/product-detail.html'">
-							<div class="thum-mouse-over">
-								<a class="thum"><img src="./images/main-best-item-03.jpg"></a>
-							</div>
-							<div class="desc">
-								<h4>[gift] 클린퍼프 3p 증정</h4>
-								<h3>세라믹 쿠션 퍼펙트 쿠션 세트</h3>
-								<div class="price">
-									<b>29,900원</b>
-									<s>59,000원</s>
-								</div>
-								<div class="wish">
-									<a href="#none"><i class="bi bi-heart"></i></a>
-									<a href="#none"><i class="bi bi-bag"></i></a>
-									<span>review (355)</span>
-								</div>
-							</div>
-						</div>
-						<div class="item" onclick="location.href='./html/product-detail.html'">
-							<div class="thum-mouse-over">
-								<a class="thum"><img src="./images/main-best-item-04.jpg"></a>
-								<a class="thum-hidden"><img src="./images/main-best-item-04-change.jpg"></a>
-							</div>
-							<div class="desc">
-								<span class="badge">HOT</span>
-								<h3>베베 틴트 듀오 세트</h3>
-								<div class="price">
-									<b>29,900원</b>
-									<s>40,000원</s>
-								</div>
-								<div class="wish">
-									<a href="#none"><i class="bi bi-heart"></i></a>
-									<a href="#none"><i class="bi bi-bag"></i></a>
-									<span>review (90)</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- 어뮤즈 pick  -->
-				<div class="amuse-pick">
-					<div class="items-header">
-						<h1>AMUSE'S PICK!</h1>
-					</div>
-					<div class="amuse-pick-slider">
-						<div class="amuse-pick-slider-inner">
-							<div class="amuse-pick-item" onclick="location.href='./html/product-detail.html'">
-								<a><img src="./images/main-pick-01.jpg"></a>
-								<div class="thum-hidden pick">
-									<div>
-										<h1>립 앤 치크 헬시 밤</h1>
-										<p>
-											두 가지 제형과 컬러를 믹스하여
-											촉촉한 생과즙 광을 완성하는
-											립&치크 헬시 밤
-										</p>
+					<ul class="item-list">
+						<li class="item best">
+							<div>
+								<div class="item-img"><img src="./images/main-best-item-01.jpg"></div>
+								<div class="item-content">
+									<div class="dec">모든 화장품이 한번에 쏘옥~</div>
+									<div class="item-title">마이 어뮤즈 파우치</div>
+									<div class="price">
+										<strong>13,000원</strong>
+										<s>15,000원</s>
+									</div>
+									<div class="tags">
+										<a href="#none">찜</a>
+										<a href="#none">담기</a>
+										<span>review(125)</span>
 									</div>
 								</div>
 							</div>
-							<div class="amuse-pick-item" onclick="location.href='./html/product-detail.html'">
-								<a><img src="./images/main-pick-02.jpg"></a>
-								<div class="thum-hidden pick">
-									<div>
-										<h1>듀 젤리 비건 쿠션</h1>
-										<p>
-											맑음으로 탄탄하게 차오르다
-											클린&비건 물찬광 쿠션
-										</p>
+						</li>
+						<li class="item best">
+							<div>
+								<div class="item-img"><img src="./images/main-best-item-02.jpg"></div>
+								<div class="item-content">
+									<div class="dec">&#91;gift&#93; 립 마스크 증정</div>
+									<div class="item-title">듀 젤리 비건 쿠션 세트</div>
+									<div class="price">
+										<strong>37,800원</strong>
+										<s>54,000원</s>
+									</div>
+									<div class="tags">
+										<a href="#none">찜</a>
+										<a href="#none">담기</a>
+										<span>review(138)</span>
 									</div>
 								</div>
 							</div>
-							<div class="amuse-pick-item" onclick="location.href='./html/product-detail.html'">
-								<a><img src="./images/main-pick-03.jpg"></a>
-								<div class="thum-hidden pick">
-									<div>
-										<h1>젤 핏 틴트</h1>
-										<p>
-											맑고 선명한 탱글 젤리가
-											쫀쫀 밀착되는 12시간 지속의
-											롱래스팅 젤핏 틴트
-										</p>
+						</li>
+						<li class="item best">
+							<div>
+								<div class="item-img"><img src="./images/main-best-item-03.jpg"></div>
+								<div class="item-content">
+									<div class="dec">&#91;gift&#93; 클린퍼프 3p 증정</div>
+									<div class="item-title">세라믹 쿠션 퍼펙트 쿠션 세트</div>
+									<div class="price">
+										<strong>29,900원</strong>
+										<s>59,000원</s>
+									</div>
+									<div class="tags">
+										<a href="#none">찜</a>
+										<a href="#none">담기</a>
+										<span>review(355)</span>
 									</div>
 								</div>
 							</div>
-							<div class="amuse-pick-item" onclick="location.href='./html/product-detail.html'">
-								<a><img src="./images/main-pick-04.jpg"></a>
-								<div class="thum-hidden pick">
-									<div>
-										<h1>애교살 볼륨 메이크업 세트</h1>
-										<p>
-											화사한 살결음영과
-											맑고 투명한 빛으로
-											완성하는 아이 컬렉션
-										</p>
+						</li>
+						<li class="item best">
+							<div>
+								<div class="item-img"><img src="./images/main-best-item-04.jpg"></div>
+								<div class="item-content">
+									<div class="dec"><span class="badge">HOT</span></div>
+									<div class="item-title">베베 틴트 듀오 세트</div>
+									<div class="price">
+										<strong>29,900원</strong>
+										<s>40,000원</s>
+									</div>
+									<div class="tags">
+										<a href="#none">찜</a>
+										<a href="#none">담기</a>
+										<span>review(90)</span>
 									</div>
 								</div>
 							</div>
-							<div class="amuse-pick-item" onclick="location.href='./html/product-detail.html'">
-								<a><img src="./images/main-pick-05.jpg"></a>
-								<div class="thum-hidden pick">
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- 추천 아이템 -->
+			<section class="suggest">
+				<div class="wrap">
+					<div class="title">
+						<h2>어뮤즈 추천템</h2>
+					</div>
+					<div class="suggest-container slider">
+						<a href="#a" class="prev">이전</a>
+						<a href="#a" class="next">다음</a>
+						<ul class="suggest-wrapper">
+							<li class="suggest-item-01">
+								<div class="hover">
 									<div>
-										<h1>베베틴트</h1>
-										<p>
-											틴트+플럼핑+립케어까지
-											신개념 수분 립 오일
-											틴트의 탄생
-										</p>
+										<h2>립 앤 치크 헬시 밤</h2>
+										쿠션,맑음으로 탄탄하게 차오르다<br>
+										클린&amp;비건 물찬광 쿠션
 									</div>
 								</div>
-							</div>
-						</div>
+							</li>
+							<li class="suggest-item-02">
+								<div class="hover">
+									<div>
+										<h2>듀 젤리 비건 쿠션</h2>
+										두 가지 제형과 컬러를 믹스하여<br>촉촉한 생과즙 광을 완성하는<br>
+										립&amp;치크 헬시 밤
+									</div>
+								</div>
+							</li>
+							<li class="suggest-item-03">
+								<div class="hover">
+									<div>
+										<h2>듀 젤리 비건 쿠션</h2>
+										쿠션,맑음으로 탄탄하게 차오르다<br>
+										클린&amp;비건 물찬광 쿠션
+									</div>
+								</div>
+							</li>
+							<li class="suggest-item-04">
+								<div class="hover">
+									<div>
+										<h2>젤 핏 틴트</h2>
+										맑고 선명한 탱글 젤리가<br>쫀쫀 밀착되는<br>
+										12시간 지속의 롱래스팅 젤핏 틴트
+									</div>
+								</div>
+							</li>
+							<li class="suggest-item-05">
+								<div class="hover">
+									<div>
+										<h2>듀 젤리 비건 쿠션</h2>
+										쿠션,맑음으로 탄탄하게 차오르다<br>
+										클린&amp;비건 물찬광 쿠션
+									</div>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
-				<!-- 서브 배너  -->
-				<div class="sub-banner">
-					<a href="#none"><img src="./images/main-sub-banner.png"></a>
+			</section>
+			<!-- 카테고리별 랭킹 -->
+			<section class="ranking">
+				<div class="wrap">
+					<div class="title">
+						<h2>카테고리 랭킹</h2>
+					</div>
+					<div class="ranking-container">
+						<input type="radio" name="slide" id="slide1" name="rank" checked>
+						<input type="radio" name="slide" id="slide2" name="rank">
+						<input type="radio" name="slide" id="slide3" name="rank">
+						<input type="radio" name="slide" id="slide4" name="rank">
+						<div class="bullets">
+							<label for="slide1">베이스</label>
+							<label for="slide2">립</label>
+							<label for="slide3">아이</label>
+							<label for="slide4">미용소품</label>
+						</div>
+						<ul class="ranking-items">
+							<li class="slide1">
+								<div class="ranking-item">
+									<div class="ranking-slider">
+										<ul class="ranking-slider-wrapper">
+											<li class="item ranking">
+												<div>
+													<div class="item-img"><img src="./images/ranking-face-01.jpg"></div>
+													<div class="item-content">
+														<div class="dec"><span class="badge count">BEST1</span></div>
+														<div class="item-title">세라믹 페이스 세트</div>
+														<div class="small-title">세라믹 파운데이션 + 파우더 세트</div>
+														<div class="price">
+															<strong>38,500원</strong>
+															<s>51,900원</s>
+														</div>
+														<div class="tags">
+															<span>review(40)</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="item ranking">
+												<div>
+													<div class="item-img"><img src="./images/ranking-face-02.jpg"></div>
+													<div class="item-content">
+														<div class="dec"><span class="badge count">BEST2</span></div>
+														<div class="item-title">치크 톡톡 듀오 세트</div>
+														<div class="small-title">톡톡 키링 증정</div>
+														<div class="price">
+															<strong>27,200원</strong>
+															<s>34,000원</s>
+														</div>
+														<div class="tags">
+															<span>review(90)</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="item ranking">
+												<div>
+													<div class="item-img"><img src="./images/ranking-face-03.jpg"></div>
+													<div class="item-content">
+														<div class="dec"><span class="badge count">BEST3</span></div>
+														<div class="item-title">비건 선크림 듀오 세트</div>
+														<div class="price">
+															<strong>31,200원</strong>
+															<s>48,000원</s>
+														</div>
+														<div class="tags">
+															<span>review(90)</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="item ranking">
+												<div>
+													<div class="item-img"><img src="./images/ranking-face-04.jpg"></div>
+													<div class="item-content">
+														<div class="dec"><span class="badge count">BEST4</span></div>
+														<div class="item-title">세라믹 풀 페이스 세트</div>
+														<div class="small-title">세라믹 쿠션 + 파운데이션 + 파우더 세트</div>
+														<div class="price">
+															<strong>49,500원</strong>
+															<s>89,000원</s>
+														</div>
+														<div class="tags">
+															<span>review(100)</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="item ranking">
+												<div>
+													<div class="item-img"><img src="./images/ranking-face-05.jpg"></div>
+													<div class="item-content">
+														<div class="dec"><span class="badge count">BEST5</span></div>
+														<div class="item-title">듀 젤리 마스터 쿠션 세트</div>
+														<div class="small-title">본품 + 리필 2ea (퍼프증정)</div>
+														<div class="price">
+															<strong>37,800원</strong>
+															<s>78,000원</s>
+														</div>
+														<div class="tags">
+															<span>review(90)</span>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="top5">
+										<ol>
+											<li><a href="#none">세라믹 페이스 세트</a></li>
+											<li><a href="#none">치크 톡톡 듀오 세트</a></li>
+											<li><a href="#none">비건 선크림 듀오 세트</a></li>
+											<li><a href="#none">세라믹 풀 페이스 세트</a></li>
+											<li><a href="#none">듀 젤리 마스터 쿠션 세트</a></li>
+										</ol>
+									</div>
+								</div>
+							</li>
+							<li class="slide2">
+								<div class="ranking-item">
+									<div class="ranking-slider">
+										<ul class="ranking-slider-wrapper">
+											<li class="item ranking">
+												<div>
+													<div class="item-img"><img src="./images/ranking-lip-01.jpg"></div>
+													<div class="item-content">
+														<div class="dec"><span class="badge count">BEST1</span></div>
+														<div class="item-title">어뮤즈 젤핏 틴트 버니 텅</div>
+														<div class="price">
+															<strong>16,500원</strong>
+															<s>21,900원</s>
+														</div>
+														<div class="tags">
+															<span>review(40)</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="item ranking">
+												<div>
+													<div class="item-img"><img src="./images/ranking-lip-02.jpg"></div>
+													<div class="item-content">
+														<div class="dec"><span class="badge count">BEST2</span></div>
+														<div class="item-title">듀 밤 듀오 세트</div>
+														<div class="small-title">립 스머져 증정</div>
+														<div class="price">
+															<strong>29,600원</strong>
+															<s>40,000원</s>
+														</div>
+														<div class="tags">
+															<span>review(50)</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="item ranking">
+												<div>
+													<div class="item-img"><img src="./images/ranking-lip-03.jpg"></div>
+													<div class="item-content">
+														<div class="dec"><span class="badge count">BEST3</span></div>
+														<div class="item-title">립 앤 치크 핸드폰 듀오 세트</div>
+														<div class="price">
+															<strong>30,400원</strong>
+															<s>38,000원</s>
+														</div>
+														<div class="tags">
+															<span>review(90)</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="item ranking">
+												<div>
+													<div class="item-img"><img src="./images/ranking-lip-04.jpg"></div>
+													<div class="item-content">
+														<div class="dec"><span class="badge count">BEST4</span></div>
+														<div class="item-title">젤핏 틴트 듀오 세트</div>
+														<div class="small-title">헬로키티 틴트 반지 증정</div>
+														<div class="price">
+															<strong>32,500원</strong>
+															<s>40,000원</s>
+														</div>
+														<div class="tags">
+															<span>review(120)</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="item ranking">
+												<div>
+													<div class="item-img"><img src="./images/ranking-lip-05.jpg"></div>
+													<div class="item-content">
+														<div class="dec"><span class="badge count">BEST5</span></div>
+														<div class="item-title">젤핏 틴트 듀오 + 키링 세트</div>
+														<div class="small-title"> 립 브러쉬 증정</div>
+														<div class="price">
+															<strong>30,000원</strong>
+															<s>55,000원</s>
+														</div>
+														<div class="tags">
+															<span>review(90)</span>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="top5">
+										<ol>
+											<li><a href="#none">어뮤즈 젤핏 틴트 버니 텅</a></li>
+											<li><a href="#none">듀 밤 듀오 세트</a></li>
+											<li><a href="#none">립 앤 치크 핸드폰 듀오 세트</a></li>
+											<li><a href="#none">젤핏 틴트 듀오 세트</a></li>
+											<li><a href="#none">젤핏 틴트 듀오 + 키링 세트</a></li>
+										</ol>
+									</div>
+								</div>
+							</li>
+							<li class="slide3">
+								<div class="ranking-item">
+									<div class="ranking-slider">
+										<ul class="ranking-slider-wrapper">
+											<li class="item ranking">
+												<div>
+													<div class="item-img"><img src="./images/ranking-lip-01.jpg"></div>
+													<div class="item-content">
+														<div class="dec"><span class="badge count">BEST1</span></div>
+														<div class="item-title">어뮤즈 젤핏 틴트 버니 텅</div>
+														<div class="price">
+															<strong>16,500원</strong>
+															<s>21,900원</s>
+														</div>
+														<div class="tags">
+															<span>review(40)</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="item ranking">
+												<div>
+													<div class="item-img"><img src="./images/ranking-lip-02.jpg"></div>
+													<div class="item-content">
+														<div class="dec"><span class="badge count">BEST2</span></div>
+														<div class="item-title">듀 밤 듀오 세트</div>
+														<div class="small-title">립 스머져 증정</div>
+														<div class="price">
+															<strong>29,600원</strong>
+															<s>40,000원</s>
+														</div>
+														<div class="tags">
+															<span>review(50)</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="item ranking">
+												<div>
+													<div class="item-img"><img src="./images/ranking-lip-03.jpg"></div>
+													<div class="item-content">
+														<div class="dec"><span class="badge count">BEST3</span></div>
+														<div class="item-title">립 앤 치크 핸드폰 듀오 세트</div>
+														<div class="price">
+															<strong>30,400원</strong>
+															<s>38,000원</s>
+														</div>
+														<div class="tags">
+															<span>review(90)</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="item ranking">
+												<div>
+													<div class="item-img"><img src="./images/ranking-face-04.jpg"></div>
+													<div class="item-content">
+														<div class="dec"><span class="badge count">BEST4</span></div>
+														<div class="item-title">세라믹 풀 페이스 세트</div>
+														<div class="small-title">세라믹 쿠션 + 파운데이션 + 파우더 세트</div>
+														<div class="price">
+															<strong>49,500원</strong>
+															<s>89,000원</s>
+														</div>
+														<div class="tags">
+															<span>review(100)</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="item ranking">
+												<div>
+													<div class="item-img"><img src="./images/ranking-face-05.jpg"></div>
+													<div class="item-content">
+														<div class="dec"><span class="badge count">BEST5</span></div>
+														<div class="item-title">듀 젤리 마스터 쿠션 세트</div>
+														<div class="small-title">본품 + 리필 2ea (퍼프증정)</div>
+														<div class="price">
+															<strong>37,800원</strong>
+															<s>78,000원</s>
+														</div>
+														<div class="tags">
+															<span>review(90)</span>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="top5">
+										<ol>
+											<li><a href="#none">어뮤즈 젤핏 틴트 버니 텅</a></li>
+											<li><a href="#none">듀 밤 듀오 세트</a></li>
+											<li><a href="#none">립 앤 치크 핸드폰 듀오 세트</a></li>
+											<li><a href="#none">젤핏 틴트 듀오 세트</a></li>
+											<li><a href="#none">젤핏 틴트 듀오 + 키링 세트</a></li>
+										</ol>
+									</div>
+								</div>
+							</li>
+							<li class="slide4">
+								<div class="ranking-item">
+									<div class="ranking-slider">
+										<ul class="ranking-slider-wrapper">
+											<li class="item ranking">
+												<div>
+													<div class="item-img"><img src="./images/ranking-face-01.jpg"></div>
+													<div class="item-content">
+														<div class="dec"><span class="badge count">BEST1</span></div>
+														<div class="item-title">세라믹 페이스 세트</div>
+														<div class="small-title">세라믹 파운데이션 + 파우더 세트</div>
+														<div class="price">
+															<strong>38,500원</strong>
+															<s>51,900원</s>
+														</div>
+														<div class="tags">
+															<span>review(40)</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="item ranking">
+												<div>
+													<div class="item-img"><img src="./images/ranking-face-02.jpg"></div>
+													<div class="item-content">
+														<div class="dec"><span class="badge count">BEST2</span></div>
+														<div class="item-title">치크 톡톡 듀오 세트</div>
+														<div class="small-title">톡톡 키링 증정</div>
+														<div class="price">
+															<strong>27,200원</strong>
+															<s>34,000원</s>
+														</div>
+														<div class="tags">
+															<span>review(90)</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="item ranking">
+												<div>
+													<div class="item-img"><img src="./images/ranking-face-03.jpg"></div>
+													<div class="item-content">
+														<div class="dec"><span class="badge count">BEST3</span></div>
+														<div class="item-title">비건 선크림 듀오 세트</div>
+														<div class="price">
+															<strong>31,200원</strong>
+															<s>48,000원</s>
+														</div>
+														<div class="tags">
+															<span>review(90)</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="item ranking">
+												<div>
+													<div class="item-img"><img src="./images/ranking-face-04.jpg"></div>
+													<div class="item-content">
+														<div class="dec"><span class="badge count">BEST4</span></div>
+														<div class="item-title">세라믹 풀 페이스 세트</div>
+														<div class="small-title">세라믹 쿠션 + 파운데이션 + 파우더 세트</div>
+														<div class="price">
+															<strong>49,500원</strong>
+															<s>89,000원</s>
+														</div>
+														<div class="tags">
+															<span>review(100)</span>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="item ranking">
+												<div>
+													<div class="item-img"><img src="./images/ranking-face-05.jpg"></div>
+													<div class="item-content">
+														<div class="dec"><span class="badge count">BEST5</span></div>
+														<div class="item-title">듀 젤리 마스터 쿠션 세트</div>
+														<div class="small-title">본품 + 리필 2ea (퍼프증정)</div>
+														<div class="price">
+															<strong>37,800원</strong>
+															<s>78,000원</s>
+														</div>
+														<div class="tags">
+															<span>review(90)</span>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="top5">
+										<ol>
+											<li><a href="#none">세라믹 페이스 세트</a></li>
+											<li><a href="#none">치크 톡톡 듀오 세트</a></li>
+											<li><a href="#none">비건 선크림 듀오 세트</a></li>
+											<li><a href="#none">세라믹 풀 페이스 세트</a></li>
+											<li><a href="#none">듀 젤리 마스터 쿠션 세트</a></li>
+										</ol>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<!-- 베스트리뷰 미리보기  -->
-				<div class="best-review">
-					<div class="items-header">
-						<div>
-							<h1>베스트 리뷰</h1>
-							<span>고객님들의 실제 제품 사용후기</span>
-						</div>
-						<button class="btn-more">후기 더보기 +</button>
-					</div>
-					<div class="best-review-items">
-						<div class="item">
-							<a href="#none"><img src="./images/main-best-review-01.jpg"></a>
-							<div class="item-review-desc">
-								<div class="stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-								</div>
-								<div class="review">
-									백탁 없고 좋은 선크림 같아요.
-									잘산템 중 하나에요!
-								</div>
-								<div class="date">
-									2024.01.25
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<a href="#none"><img src="./images/main-best-review-02.jpg"></a>
-							<div class="item-review-desc">
-								<div class="stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-								</div>
-								<div class="review">
-									정말 촉촉하게 잘 발려서 잘쓰고 있어요.
-									뜨는 것도 없어요.
-								</div>
-								<div class="date">
-									2024.01.20
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<a href="#none"><img src="./images/main-best-review-03.jpg"></a>
-							<div class="item-review-desc">
-								<div class="stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-								</div>
-								<div class="review">
-									피부표현을 정말 잘해줘요.
-									도자기피부 완성입니다.
-								</div>
-								<div class="date">
-									2024.02.19
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<a href="#none"><img src="./images/main-best-review-04.jpg"></a>
-							<div class="item-review-desc">
-								<div class="stars">
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-									<i class="bi bi-star-fill"></i>
-								</div>
-								<div class="review">
-									각질부각 없이 발려요.
-									플럼핑 효과도 있는 것 같아요ㅎ
-								</div>
-								<div class="date">
-									2024.03.20
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- 인스타 피드  -->
-				<div class="insta-feed">
-					<div class="insta-feed-header">
-						<h1>Instagram</h1>
-						<a href="#none"><img src="./images/instagram.png">amuse</a>
-					</div>
-					<div class="insta-feed-list">
-						<a href="#none" class="item item1"><img src="./images/main-insta-01.jpg"></a>
-						<a href="#none" class="item item2"><img src="./images/main-insta-02.jpg"></a>
-						<a href="#none" class="item item3"><img src="./images/main-insta-03.jpg"></a>
-						<a href="#none" class="item item4"><img src="./images/main-insta-04.jpg"></a>
-						<a href="#none" class="item item5"><img src="./images/main-insta-05.jpg"></a>
-						<a href="#none" class="item item6"><img src="./images/main-insta-06.jpg"></a>
-						<a href="#none" class="item item7"><img src="./images/main-insta-07.jpg"></a>
-						<a href="#none" class="item item8"><img src="./images/main-insta-08.jpg"></a>
-						<a href="#none" class="item item9"><img src="./images/main-insta-09.jpg"></a>
-						<a href="#none" class="item item10"><img src="./images/main-insta-10.jpg"></a>
-					</div>
-					<button class="btn-feed-more">More<i class="bi bi-chevron-down"></i></button>
-				</div>
+			</section>
 		</div>
-		<!-- GNB -->
-		<footer class="gnb">
-			<div class="gnb-inner">
-				<div class="gnb-logo-sns-link">
-					<a class="logo" href="../index.html"><img src="./images/logo.png"></a>
-					<div class="sns">
-						<a href="#none"><img src="./images/instagram.png"></a>
-						<a href="#none"><img src="./images/kakao_talk.png"></a>
-						<a href="#none"><img src="./images/twitter.png"></a>
-					</div>
-					<div class="company-link">
-						<span>@AMUSE all right reserved.</span>
-						<a href="#none">이용약관</a>
-						<a href="#none">개인정보처리방침</a>
-						<a href="#none">사업자정보확인</a>
-					</div>
-				</div>
-				<div class="gnb-customer-hours">
-					<div class="customer">
-						<span>고객센터</span>
-						<span>1833 - 7689</span>
-					</div>
-					<div class="hours">
-						<span>평일 월 ~ 금  9AM ~ 5PM</span>
-						<span>점심시간  12PM ~ 1PM</span>
-						<span>토,일,공휴일 휴무</span>
-					</div>
-				</div>
-				<div class="gnb-company">
-					<div class="company-info">
-						<a href="#none">마이페이지</a>
-						<a href="#none">질문과답변</a>
-						<a href="#none">매장검색</a>
-						<a href="#none">협력문의</a>
-						<a href="#none">help_amuse@amusemakeup.com</a>
-					</div>
-				</div>
-			</div>
-		</footer>
+		<!-- Gnb -->
+		<div class="gnb-include"></div>
+		<!-- Gnb -->
 	</div>
 </body>
-</html>
 <script>
-	$('.trigger').click(function(){
-    $(this).toggleClass('active');
-    $('.mobile-nav').toggleClass('active');
-  })
-  $('.main-content, .login-content, .item-list-content, .notice-content, .product-detail-content').click(function(){
-    $('.mobile-nav').removeClass('active');
-  })
+	$('.header-include').load('./include/header.html');
+	$('.gnb-include').load('./include/gnb.html');
 </script>
+</html>
