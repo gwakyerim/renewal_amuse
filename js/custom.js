@@ -42,4 +42,25 @@ $(function(){
 		dots: false,
 		arrows: false,
   });
+	
+	$('.suggestion-items').slick({
+		slidesToShow: 5,
+    autoplay: true,
+    responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 2,
+					autoplaySpeed: 5000,
+				}
+			},
+			{
+				breakpoint:	1023,
+				settings: {
+					slidesToShow: 3,
+					autoplaySpeed: 5000,
+				}
+			}
+		]
+  });
 })

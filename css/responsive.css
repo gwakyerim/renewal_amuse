@@ -2,36 +2,40 @@
 @import url('./reset.css');
 @import url('./variables.css');
 
-@media screen and (min-width : 320px) and (max-width : 767px) {
+@media screen and (min-width : 375px) and (max-width : 767px) {
 	html {
-		font-size: 50%;
+		font-size: 50%; /* 100% = 16px | 50% = 8px */
 	}
 	body {
 		height: auto;
-		padding-top: 8rem;
+		padding-top: 0;
 	}
-	/* ### Common CSS ### */
+	/* ### Common CSS 공통영역 ### */
 	/* Layout */
 	.container {
-		min-height: auto;
 		position: relative;
 		padding-bottom: 32.8rem;
+	}
+	.contents {
+		padding-top: 8rem;
 	}
 	.wrap {
 		width: 100%;
 		position: relative;
-		padding: 4rem 2rem;
+		padding: 0 1.6rem;
+		margin-top: 8rem;
 	}
 	/* header */
-	.header {
+	.bar-popup {
+		display: none;
+	}
+	.main-header {
 		position: fixed;
+		display: flex;
 		top: 0;
 		left: 0;
 		width: 100%;
 		z-index: 1000;
-	}
-	.bar-popup {
-		display: none;
 	}
 	.main-header > div {
 		width: 100%;
@@ -53,6 +57,7 @@
 		z-index: 1000;
 		background-color: var(--white);
 		transition: 0.5s;
+		text-align: center;
 	}
 	.main-header nav.active {
 		right: 0;
@@ -69,6 +74,17 @@
 		width: 100%;
 		padding: 4rem 0;
 		border-bottom: 1px solid var(--light-gray);
+	}
+	.main-header nav .mobile-login {
+		padding: 1.6rem 0;
+		width: 80%;
+		border-radius: 1rem;
+		background-color: var(--pink);
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 4rem;
+		display: block;
 	}
 	.main-header .icon-box {
 		display: none;
@@ -87,7 +103,6 @@
 		height: 0.1rem;
 		background-color: var(--dark-gray);
 		left: 0;
-		transition: 0.5s;
 	}
 	.mobile-nav span:nth-child(2) {
 		top: 50%;
@@ -106,38 +121,41 @@
 		top: 50%;
 		transform: rotate(-45deg);
 	}
+	/*  GNB  */
+	.gnb {
+		background-color: var(--pink);
+	}
+	.gnb .wrap {
+		padding: 4rem 1.6rem;
+	}
+	.gnb-logo-sns .logo {
+		width: inherit;
+		width: 18rem;
+		height: 3.2rem;
+		background: url('../images/logo.png') no-repeat center;
+		background-size: contain;
+	}
+	
+	/* ###### 메인페이지 영역 ###### */
 	/* Section - main slider */
 	.main-container.slider {
-		margin: 4rem 0 0 0;
+		margin-top: 4rem;
 	}
 	.prev,
 	.next {
 		opacity: 0;
 	}
 	/* Section - best */
-	.item-list {
+	.best-list {
 		width: 100%;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-column-gap: 2rem;
-		grid-row-gap: 2rem;
-	}
-	.item {
-		height: auto;
-		text-align: center;
-	}
-	.item .item-img {
-		width: 100%;
-		height: auto;
+		grid-column-gap: 1.6rem;
+		grid-row-gap: 1.6rem;
 	}
 	.item .item-img img {
-		width: inherit;
+		width: 100%;
 		height: auto;
-		object-fit: cover;
-	}
-	.item-content {
-		height: auto;
-		padding: 0;
 	}
 	/* Section - suggest */
 	.suggest-container.slider {
@@ -156,7 +174,6 @@
 	}
 	.suggest-wrapper li {
 		width: 100%;
-		height : 41.3rem;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -211,23 +228,218 @@
 	.top5 {
 		padding: 0;
 	}
-	/*  GNB  */
-	.gnb {
-		background-color: var(--pink);
+	
+	/* ###### 아이템 리스트 페이지 영역 ###### */
+	.tab-category {
+		column-gap: 1.6rem;
+		padding: 4rem 0;
+	}
+	.best-item-list {
+		display: grid;
+		grid-template-columns: repeat(2 ,1fr);
+		grid-gap: 1.6rem;
+	}
+	
+	/* ###### 제품 상세 페이지 영역 ###### */
+	/* section - item-category */
+	.detail-area {
+		padding-top: 4rem;
+		display: flex;
+		flex-direction: column;
+	}
+	.left-area .big-img {
+    width: 100%;
+	}
+  .right-area {
+    width: 100%;
+  }
+	.right-area-wrap {
 		margin-top: 4rem;
-		height: auto;
+		margin-left: 0;
 	}
-	.gnb .wrap {
-		padding: 4rem 2rem;
+	.prd-info {
+		border-bottom: 1px solid var(--light-gray);
 	}
-	.gnb-logo-sns .logo {
-		width: inherit;
-		width: 18rem;
-		height: 3.2rem;
-		background: url('../images/logo.png') no-repeat center;
-		background-size: contain;
+	.prd-info .heading .dec {
+		color: var(--dark-gray);
+	}
+	.prd-detail-design {
+		padding: 2rem 0 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.prd-detail-design table {
+		border: 1px solid transparent;
+		font-size: 1.4rem;
+		width: 59.5rem;
+		border-collapse: collapse;
+		border-spacing: 0;
+		text-align: left;
+	}
+	.prd-detail-design table tr th {
+		width: 8rem;
+		font-weight: 500;
+		padding: 2rem 0;
+	}
+	.prd-detail-design table tr td > b,
+	.prd-detail-design table tr td > span {
+		font-weight: 500;
+	}
+	.prd-detail-design table tr td > s {
+		margin-left: 2rem;
+	}
+	.prd-detail-design .sns-share a {
+		width: 4.5rem;
+		height: 4.5rem;
+		display: inline-block;
+		position: relative;
+	}
+	.prd-detail-design .sns-share a > img {
+		width: 2.5rem;
+		height: 2.5rem;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	.prd-option {
+		padding: 0;
+		border-bottom: 1px solid var(--dark-gray);
+	}
+	.prd-option .count table {
+    width: 100%;
+	}
+	.prd-option .count table thead > tr > th {
+		padding: 0;
+	}
+	.prd-option .option-add td:nth-child(2),
+	.prd-option .option-add td:nth-child(3) {
+		text-align: right;
+	}
+	.prd-option .option-add .item-count {
+		display: inline-block;
+		position: relative;
+		width: 7.5rem;
+		padding: 0 2.0rem;
+		height: 2.5rem;
+	}
+	.prd-option .option-add .item-count input {
+		width: 4.5rem;
+		height: 2.5rem;
+		border: 1px solid var(--light-gray);
+		border-radius: 5px 0 0 5px;
+		text-align: center;
+		outline: none;
+	}
+	.prd-option .option-add .item-count a {
+		position: absolute;
+		width: 3.0rem;
+	}
+	.prd-option .option-add .item-count a:nth-child(2) {
+		height: calc(2.5rem / 2);
+		border: 1px solid var(--light-gray);
+		top: 0.1rem;
+		right: -2rem;
+		border-radius: 0 5px 0 0;
+		border-left: none;
+		background: url(../images/chevron-up.png) no-repeat center;
+	}
+	.prd-option .option-add .item-count a:nth-child(3) {
+		height: calc(2.5rem / 2);
+		border: 1px solid var(--light-gray);
+		bottom: -0.1rem;
+		right: -2rem;
+		border-radius: 0 0 5px 0;
+		border-left: none;
+		background: url(../images/chevron-down.png)  no-repeat center;
+	}
+	.total-price {
+		padding: 4rem 0;
+		text-align: right;
+		color: var(--dark-gray);
+		font-size: 1.4rem;
+	}
+	.total-price strong {
+		color: var(--dark-black);
+		font-size: 2.0rem;
+		padding: 0 1rem;
+	}
+	.prd-action {
+		width: 100%;
+		height: 5.5rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 0 6rem;
+	}
+	.prd-action [class^='btn'] {
+		border: 1px solid var(--dark-black);
+		height: 100%;
+		border-radius: 2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.prd-action .btn-buy {
+		width: 22.3rem;
+		background-color: var(--dark-black);
+		color: var(--white);
+	}
+	.prd-action .btn-cart ,
+	.prd-action .btn-wish {
+		width: 18.8rem;
+	}
+  .npay-btn {
+    width: 100%;
+    gap: 1.6rem;
+  }
+  .npay-btn .text {
+    display: none;
+  }
+  .npay-btn .btn-list {
+    width: 100%;
+    gap: 1.6rem;
+  }
+  .npay-event {
+    width: 100%;
+    margin: 2rem 0;
+    font-size: 1.4rem;
+  }
+  .npay-event a {
+    display: block;
+    width: 100%;
+  }
+	.npay-event a strong {
+		padding-right: 4rem;
+	}
+	.product-suggestion {
+		margin: 8rem 0;
+	}
+	.product-detail-contents {
+		width: 100%;
+	}
+	.product-detail-contents .detail-tabs {
+		margin: 0 0 8rem 0;
+		position: relative;
+	}
+	.detail-tabs .detail-tab {
+		width: 100%;
+		height: 5.5rem;
+		display: flex;
+	}
+	.detail-tabs .detail-tab .tab-open {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid var(--light-gray);
+	}
+	.detail-tabs .detail-tab .tab-open.active {
+		border-top: 2px solid var(--dark-black);
 	}
 }
+
 @media all and (min-width : 768px) and (max-width : 1023px) {
 	body {
 		height: auto;
@@ -339,29 +551,16 @@
 		right: 2rem;
 	}
 	/* Section - best */
-	.item-list {
+	.best-list {
 		width: 100%;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-column-gap: 2rem;
-		grid-row-gap: 2rem;
-	}
-	.item {
-		height: auto;
-		text-align: center;
-	}
-	.item .item-img {
-		width: 100%;
-		height: auto;
+		grid-column-gap: 1.6rem;
+		grid-row-gap: 1.6rem;
 	}
 	.item .item-img img {
-		width: inherit;
+		width: 100%;
 		height: auto;
-		object-fit: cover;
-	}
-	.item-content {
-		height: auto;
-		padding: 0;
 	}
 	/* Section - suggest */
 	.suggest-container.slider {
@@ -435,20 +634,13 @@
 	.top5 {
 		padding: 0;
 	}
-	/*  GNB  */
-	.gnb {
-		background-color: var(--pink);
-		margin-top: 4rem;
-		height: auto;
+	/* ###### 아이템 리스트 페이지 영역 ###### */
+	.tab-category {
+		column-gap: 1.6rem;
+		padding: 4rem 0;
 	}
-	.gnb .wrap {
-		padding: 4rem 2rem;
+	.best-item-list {
+		display: grid;
+		grid-template-columns: repeat(2 ,1fr);
+		grid-gap: 1.6rem;
 	}
-	.gnb-logo-sns .logo {
-		width: inherit;
-		width: 18rem;
-		height: 3.2rem;
-		background: url('../images/logo.png') no-repeat center;
-		background-size: contain;
-	}
-}
