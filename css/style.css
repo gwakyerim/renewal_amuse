@@ -41,6 +41,9 @@ button {
 	padding: 1rem 0;
 	font-size: 1.4rem;
 }
+.main-header {
+	width: 100%;
+}
 .main-header > div {
 	width: 128rem;
 	height: 12.5rem;
